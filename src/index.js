@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ListaDocentes from './Trabajadores/Docente';
+import Calificaciones from './Trabajadores/Calificaciones';
+import ListaClientes from './Trabajadores/Docente'; // Assuming ListaClientes is the Docentes component
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListaDocentes/>
+    <div className="container">
+      <Calificaciones />
+      <ListaClientes />
+    </div>
   </React.StrictMode>
 );
 
